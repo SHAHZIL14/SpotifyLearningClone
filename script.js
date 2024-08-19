@@ -43,7 +43,7 @@ let loop = 0;
 // console.log(artist_arr);
 let play = document.getElementsByClassName("Play")[0];
 async function getSongs() {
-    let fetched = await fetch("Songs");
+    let fetched = await fetch("https://github.com/SHAHZIL14/SpotifyLearningClone/tree/0e7a68b5c89761da554dfd10982b7bca2539a04e/Songs");
     let parsed = await fetched.text();
     let div = document.createElement("div");
     div.innerHTML = parsed;
