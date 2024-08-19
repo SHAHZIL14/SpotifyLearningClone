@@ -82,6 +82,7 @@ async function main() {
     // songName.outerHTML = "No Song Loaded"
     document.getElementById("song-about").innerHTML = "NO SONG LOADED !!!!"
     let songs = await getSongs();
+    console.log(songs);
 
     let songul = document.querySelector(".songlist").getElementsByTagName("ul")[0];
 
